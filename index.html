@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MetalForge — Support</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #09090b;
+      color: #e4e4e7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: #a855f7; text-decoration: none; }
+    a:hover { color: #c084fc; text-decoration: underline; }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid #27272a;
+      padding: 24px 0;
+    }
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      font-style: italic;
+      color: #fff;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      display: block;
+      width: 32px;
+      height: 2px;
+      background: #a855f7;
+      margin-top: 4px;
+    }
+    nav { margin-left: auto; display: flex; gap: 24px; font-size: 14px; }
+    nav a { color: #a1a1aa; }
+    nav a:hover { color: #fff; text-decoration: none; }
+
+    /* ── Hero ── */
+    .hero {
+      max-width: 720px;
+      margin: 64px auto 0;
+      padding: 0 24px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 900;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      color: #a1a1aa;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: #18181b;
+      border: 2px solid #27272a;
+      padding: 28px;
+      margin-bottom: 56px;
+    }
+    .contact-card h2 {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #a855f7;
+      margin-bottom: 12px;
+    }
+    .contact-card p { color: #a1a1aa; font-size: 15px; margin-bottom: 16px; }
+    .btn {
+      display: inline-block;
+      background: #a855f7;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 10px 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: #9333ea; text-decoration: none; color: #fff; }
+
+    /* ── FAQ ── */
+    .section {
+      max-width: 720px;
+      margin: 0 auto 64px;
+      padding: 0 24px;
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #a855f7;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #27272a;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #27272a;
+      padding: 20px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .faq-item p { color: #a1a1aa; font-size: 14px; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid #27272a;
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: #52525b;
+    }
+    footer a { color: #71717a; }
+    footer a:hover { color: #a1a1aa; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">MetalForge<span></span></div>
+      <nav>
+        <a href="index.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>How can we<br>help you?</h1>
+    <p>Support for MetalForge — Heavy Metal Chord Architect</p>
+  </div>
+
+  <div class="section">
+    <div class="contact-card">
+      <h2>Contact Support</h2>
+      <p>Got a bug, a question, or a feature request? Send us an email and we'll get back to you as soon as possible.</p>
+      <a class="btn" href="mailto:support@riffcraft.app">✉ Email Support</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-label">FAQ</div>
+
+    <div class="faq-item">
+      <h3>How do I unlock the Pro styles?</h3>
+      <p>Tap any locked style in the sidebar, or tap the "Unlock all styles" button at the bottom. This opens the Pro upgrade screen where you can complete a one-time purchase for $2.99.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is Pro a subscription?</h3>
+      <p>No. MetalForge Pro is a one-time purchase — yours forever, no recurring charges.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I restore my purchase on a new device?</h3>
+      <p>Open the Pro upgrade screen and tap "Restore Purchases". Make sure you're signed in with the same Apple ID you used for the original purchase.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is Family Sharing supported?</h3>
+      <p>Yes — MetalForge Pro supports Family Sharing. Anyone in your Apple Family Sharing group can access Pro features once one member has purchased.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What keys are supported?</h3>
+      <p>MetalForge supports E, Eb, D, C#, C, B, A, G, and F. All chord progressions and voicings automatically transpose to your selected root key.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>The app isn't showing my saved favourites — what do I do?</h3>
+      <p>Favourites are stored locally on your device. If they've disappeared, check that you're signed into the same Apple ID and haven't recently reinstalled the app. If the issue persists, contact support.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Can I request a refund?</h3>
+      <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> to submit a refund request.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Florian Bacher &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
